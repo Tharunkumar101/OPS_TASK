@@ -12,20 +12,20 @@ def wifi_menu():
     while a != b:
         print("""
                            ---- Select any option ---
-                    ➤ Turn Wi-Fi ON                     => 1
-                    ➤ Turn Wi-Fi OFF                    => 2
-                    ➤ View all available Wi-Fi          => 3
-                    ➤ Connect to a Wi-Fi Network        => 4
-                    ➤ Check Wi-Fi Connection Info       => 5
-                    ➤ Check if Wi-Fi Device is Detected => 6
-                    ➤ Exit                              => 7
+                    ➤📶 Turn Wi-Fi ON                       => 1
+                    ➤📴 Turn Wi-Fi OFF                      => 2
+                    ➤🔍 view all available Wi-Fi            => 3
+                    ➤🌐 Connect to a Wi-Fi Network          => 4         
+                    ➤📊 Check Wi-Fi Connection Info         => 5
+                    ➤📊 Check if Wi-Fi Device is Detected   => 6
+                    ➤ Exit                                  => 7
                """)
 
         a = input("Enter the option: ")
 
         if a == "1":
             print("Turn Wi-Fi ON")
-            prt("nmcli radio wifi on")
+            prt("nmcli radio wifi on 🤙")
 
         elif a == "2":
             print("Turn Wi-Fi OFF")
@@ -44,7 +44,7 @@ def wifi_menu():
             wifi_name = input("Enter the Wi-Fi Name: ")
             wifi_password = input("Enter the Wi-Fi Password: ")
             prt(f'nmcli device wifi connect "{wifi_name}" password "{wifi_password}"')
-            print("Wi-Fi Is Connected")
+            print("Wi-Fi Is Connected 🤙")
 
         elif a == "5":
             print("Check Wi-Fi Connection Info")
